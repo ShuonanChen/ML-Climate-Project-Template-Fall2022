@@ -1,17 +1,15 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
 
-![Sequoia](./figs/sequoia.png)
-
-
-# Abstract (subject to change)
-09/28 updated  
-There are many climate factors that affect the Giant Sequoia habitat. The candidate factors includ soil moisture, total precipitation, daily sunlight, wintertime snowpack/runoff, fire frequencies, past exposure to fires, aerial CO2 concentration at different elevation. In my project I aim to disentangle the relationships between these factors and how it affects the Giant Sequoia habitat. 
 
 # Plan (subject to change)
 09/28 updated  
 1. understand what might be the more direct impact to the Sequoia habitat.
 2. Find recent papers that study the same subjects - what are their conclusion, what are their methods and limitaiton? 
 3. Find the data that might be relevant. 
+    - vegetation in each year can be obtained from RAVG images
+    - wild fire data can be obtained from Cal fire and Landset image gallery?
+    - moisture data from LFMC of radiant MLHub
+4. Prediction using the wildefire real time tracking? 
 
 
 # data / resources: 
