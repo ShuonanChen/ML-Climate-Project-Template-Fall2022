@@ -1,8 +1,20 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
 
 
-# Plan (subject to change)
-09/28 updated  
+
+# 10/03 decide which data to use. 
+1. Aim: Focus on finding the dataset, make sure it can be used for the methods (reduce uncertainty). 
+2. some questions that can be asked. 
+    - can we predict the mortality rate of the trees based on the fire information. sounds like they are doing it (e.g., after KNP complex and windy fire on 2021) - how are they estimatting this, are they accurate and is there room for improvement? 
+    - can we predict whats the best design for the prescribed fires? 
+    - can we somehow predict the regeneration impact by the wildfires? 
+
+
+
+
+# 09/28 plan. 
+updated Plan (subject to change)
+
 1. understand what might be the more direct impact to the Sequoia habitat.
 2. Find recent papers that study the same subjects - what are their conclusion, what are their methods and limitaiton? 
 3. Find the data that might be relevant. 
