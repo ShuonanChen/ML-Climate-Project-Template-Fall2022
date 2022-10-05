@@ -1,10 +1,32 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
 
 
+# 10/04 what data sources will be used? 
+wildfire impact is large from 2015 to 2021. 
+- How are they impacted, 
+    - the mortality rate of each fire can be obtained. 
+- what are the factors that make the impact larger?
+    - moisture
+    - vegetation (CBI from RAVG)
+    - prescribed fire in the year. 
+    - 
+- future trends on the trees (simulate some fire????)
+- what can we do to reduce the impact? (based on the analysis results, what can we intefere)
 
-# 10/03 decide which data to use. 
+
+## data sources (updated)
+- (main)  sequoia inventory or the tree maps at different times.
+- Rapid Assessment of Vegetation Condition after Wildfire (RAVG)
+- Burned Area Emergency Response (BAER) Imagery Support program 
+- tree mortalitly: 
+    - tree stem maps + fire severity map 
+    - NPS sequoia Tree inventory (not available///?)
+    
+
+# 10/03 Narrow down the questions
 1. Aim: Focus on finding the dataset, make sure it can be used for the methods (reduce uncertainty). 
 2. some questions that can be asked. 
+    - impact of wildfire, prescribed fire, and the other factors to the forests
     - can we predict the mortality rate of the trees based on the fire information. sounds like they are doing it (e.g., after KNP complex and windy fire on 2021) - how are they estimatting this, are they accurate and is there room for improvement? 
     - can we predict whats the best design for the prescribed fires? 
     - can we somehow predict the regeneration impact by the wildfires? 
