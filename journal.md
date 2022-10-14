@@ -1,6 +1,24 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
 
 
+
+## data sources (updated 10/05)
+- (main)  sequoia inventory or the tree maps at different times.
+    - this is the hard part - we can get the grove map, but cannot find the inventory of the trees. 
+    - 
+- Rapid Assessment of Vegetation Condition after Wildfire (RAVG)
+    - what time point can we get these, at which locations? 
+    - what images are available? 
+    - how is CBI estimated?
+- Burned Area Emergency Response (BAER) Imagery Support program 
+- tree mortalitly: 
+    - tree stem maps + fire severity map 
+    - NPS sequoia Tree inventory (not available///?)
+    
+
+
+
+
 # 10/04 what data sources will be used? 
 wildfire impact is large from 2015 to 2021. 
 - How are they impacted, 
@@ -14,14 +32,6 @@ wildfire impact is large from 2015 to 2021.
 - what can we do to reduce the impact? (based on the analysis results, what can we intefere)
 
 
-## data sources (updated)
-- (main)  sequoia inventory or the tree maps at different times.
-- Rapid Assessment of Vegetation Condition after Wildfire (RAVG)
-- Burned Area Emergency Response (BAER) Imagery Support program 
-- tree mortalitly: 
-    - tree stem maps + fire severity map 
-    - NPS sequoia Tree inventory (not available///?)
-    
 
 # 10/03 Narrow down the questions
 1. Aim: Focus on finding the dataset, make sure it can be used for the methods (reduce uncertainty). 
