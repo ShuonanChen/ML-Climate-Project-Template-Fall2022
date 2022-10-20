@@ -1,12 +1,28 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
 
 
+# 10/14 update
+- what type of data might be helpful 
+    - tree inventory, or tree maps. (before and after the burn?)
+    - vegetation condition (is this redundant?) (before and after the burn?)
+    - burn images (before and after the burn?)
+    - prescribed fire (when and where) and the impact to the vegetation:
+        https://apps.wildlife.ca.gov/bios/?al=ds397
+        this have the prescribed fire database. where they are and when they are done (burned area etc info seems to be availeble) - see the description here: https://map.dfg.ca.gov/metadata/ds0397.html
+- NYVS name: sequoiadendron giganteum
+- BIOS 
+    - ds984. Vegetation - sequoia and kings canyon national parks vegetation mapping project
+    - ds397. Prescribed fire burns. 
+    - (uploaded 125 rows csv files, showing where the sequoias are located.)
+    - GIS data (GDB file) available (vector image), need to install python library which can handle these. 
 
-## data sources (updated 10/05)
+
+
+# data sources (updated 10/05)
 - (main)  sequoia inventory or the tree maps at different times.
     - this is the hard part - we can get the grove map, but cannot find the inventory of the trees. 
     - 
-- Rapid Assessment of Vegetation Condition after Wildfire (RAVG)
+- **Rapid Assessment of Vegetation Condition after Wildfire (RAVG)**
     - what time point can we get these, at which locations? 
     - what images are available? 
     - how is CBI estimated?
@@ -21,7 +37,7 @@
 
 # 10/04 what data sources will be used? 
 wildfire impact is large from 2015 to 2021. 
-- How are they impacted, 
+- How are they impacted,    
     - the mortality rate of each fire can be obtained. 
 - what are the factors that make the impact larger?
     - moisture
