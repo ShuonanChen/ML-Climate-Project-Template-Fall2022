@@ -1,6 +1,15 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
 
 
+
+# 11/08 finalizing the GIS data we will be using. 
+- vegetation: https://map.dfg.ca.gov/metadata/ds0984.html
+- prescribed fire bunrs: https://map.dfg.ca.gov/metadata/ds0397.html
+- fire perimeter through 2021: https://frap.fire.ca.gov/mapping/gis-data/
+- Post-fire Soil Erosion: https://frap.fire.ca.gov/mapping/gis-data/
+- sequoia groves: https://irma.nps.gov/DataStore/Reference/Profile/2259632 (2017)
+
+
 # 10/31 update
 - currently availble data
     - ds984 vegetation GDB vector image data (for sequoia)
