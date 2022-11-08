@@ -1,6 +1,14 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
 
 
+# 10/31 update
+- currently availble data
+    - ds984 vegetation GDB vector image data (for sequoia)
+    - ds397 prescribed fire data
+    - csv of above two 
+
+
+
 # 10/14 update
 - what type of data might be helpful 
     - tree inventory, or tree maps. (before and after the burn?)
