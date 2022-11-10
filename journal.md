@@ -3,12 +3,14 @@
 ## name conventions and layers
 1. vegetation `ds0984`
     - only one layer ds0984
+    - (only within kings kayon and sequoia park so might not be that useful?)
 2. prescribed fire burns `ds0397`
     - only one layer ds0397
 3. fire perimeter through 2021 `fire21_1`/`fire21_2`
     - `['firep21_2', 'rxburn21_2', 'Non_RXFire_Legacy13_2']`
     - these are the size of (21688, 20), (8027, 17), (864, 17).
     -  corresponds to `wildfire history, prescribed burns, and other fuel modification projects` -- we porbably are only interested in the frist two 
+    - it turns out... the second layer (prescribed fire) is basically the same thing but sliglhtly updated from above ds397. so we will be using fire21_2 only. 
 4. post-fire soil erosion `perod04_1` (this file seems to be currupted, abandoned)
     - `['perod04_1', 'VAT_perod04_1', 'fras_aux_perod04_1', 'fras_blk_perod04_1', 'fras_bnd_perod04_1', 'fras_ras_perod04_1']`
 5. sequoia groves `CA_Sierra_groves`
@@ -19,17 +21,23 @@
 ## some data want to add
 1. fire severuty
 2. humidity/water content
-3. 
+3. found something new: [**burn severity portal**](https://burnseverity.cr.usgs.gov/) - want to extract more data
 
+
+## the actual available data i have:
+1. fire each year
+2. prescribed fire each year. 
 
 ## other questions/challenges
 1. **sequoia grove daata do not have the time-series data** -- we cannot really make prediction if the data point is just one... modify the project? Some ideas relevant:
     - fire burn severity, impacted by? (we have prescribed fire data on diff years)
     - predict the future fire locations (this sounds too magical)
     - or based on what affects the burn severity, what can we do to protect sequoia? 
+    - can also focus on the castle fire 2020 since there is a previous analysis on this. 
 2. spatial GP 
 3. how to include the features (at each coordinate, we want to know the vegetation, severity of fire, etc)
 4. how to save the data
+
 
 # 11/08 finalizing the GIS data we will be using. 
 - vegetation: https://map.dfg.ca.gov/metadata/ds0984.html
