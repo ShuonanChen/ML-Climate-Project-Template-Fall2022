@@ -1,6 +1,23 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
+# 11/10 understanding the data sturcture
+## name conventions and layers
+1. vegetation `ds0984`
+    - only one layer ds0984
+2. prescribed fire burns `ds0397`
+    - only one layer ds0397
+3. fire perimeter through 2021 `fire21_1`/`fire21_2`
+    - `['firep21_2', 'rxburn21_2', 'Non_RXFire_Legacy13_2']`
+4. post-fire soil erosion `perod04_1` (this file seems to be currupted, abandoned)
+    - `['perod04_1', 'VAT_perod04_1', 'fras_aux_perod04_1', 'fras_blk_perod04_1', 'fras_bnd_perod04_1', 'fras_ras_perod04_1']`
+5. sequoia groves `CA_Sierra_groves`
+    - only one layer `CA_Sierra_groves`
 
 
+
+## some data want to add
+1. fire severuty
+2. humidity/water content
+3. 
 
 # 11/08 finalizing the GIS data we will be using. 
 - vegetation: https://map.dfg.ca.gov/metadata/ds0984.html
