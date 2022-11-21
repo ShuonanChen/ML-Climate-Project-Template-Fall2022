@@ -1,4 +1,18 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
+# 11/21 castle fire paper notes
+**"primary estimates of sequoia mortality in the 2020 castle fire. "**
+## main questions asked in the paper
+1. fire severity index (from sattelite) --> estimate how much $\frac{A_b^i}{A_{all}}$ where $A_b^i$ is the burned grove area with severity $i$, $A_{all}$ is all the grove areas.  -- table 1 and fig1. 
+2. relationships between $A_b^i$ and $S_b^i$ where the latter is teh large sequoias that burned at the severity $i$. 
+3. $S_b^i$ for each $i$ within the castle fire. 
+4. From 1 and 3, estimate proportion killed in the sierra nevada, due to the castle fire. 
+5. From 4, estimate the total number that were killed in castle fire. (previous estimate is 10-14%, which is like 7.5k = 10.6k large sequoias)
+
+
+## Assumptions made
+Especially to answer question 2, (the answer is that they can assume one-to-one correspindence between burned grove area, $A_b^i$, vs bunred sequoia proportion, $S_b^u$ for each severity $i$.), they made a few assumptions. SOme of these are made based on some preliminary analysis, some of them are purely presumptions made by the authors. But all of them should be subjec to the test. 
+
+
 # 11/10 understanding the data sturcture
 ## name conventions and layers
 1. vegetation `ds0984`
@@ -45,6 +59,7 @@
 - fire perimeter through 2021: https://frap.fire.ca.gov/mapping/gis-data/
 - Post-fire Soil Erosion: https://frap.fire.ca.gov/mapping/gis-data/
 - sequoia groves: https://irma.nps.gov/DataStore/Reference/Profile/2259632 (2017)
+
 
 
 # 10/31 update
