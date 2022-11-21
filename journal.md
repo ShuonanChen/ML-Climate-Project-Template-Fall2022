@@ -11,6 +11,25 @@
 
 ## Assumptions made
 Especially to answer question 2, (the answer is that they can assume one-to-one correspindence between burned grove area, $A_b^i$, vs bunred sequoia proportion, $S_b^u$ for each severity $i$.), they made a few assumptions. SOme of these are made based on some preliminary analysis, some of them are purely presumptions made by the authors. But all of them should be subjec to the test. 
+1. within castle fire, random fine-scale density var does not afffect broad scale conclusios. 
+2. within castle, fire severity did not vary systematically with sequoia densitites. 
+3.  sequoia within castle, grow in environmentally similar conditions within sierra nevada. 
+4. effects of past sequoia logging on range-wide estimates. (think this is indeed harder to estimate than the others)
+
+-- so which can be resolved by ML approaches? 
+- if we have multiple fire severity images (diff fires in different years), we can train a model to predict the fire severity based on the environmental factors, including the sequoia density and humidity etc. is there associations with the sequoia density and the fire severity? (does not have to be the causal associations) - GP spatial regression (Or CNN type of thing)
+- (maybe too diff for now) reinforcement learning to decide where to put the prescribed fire. 
+
+---
+maybe GP spatial regression is better for the following reasons 
+- we have limited number of data points and featurees. training a RL or CNN is probably not feasible. 
+- GP integrates nicely with the spatial data which is my main resource of the data. 
+- easier to compare with some easier image processing methods usch as linear interpolations. 
+- wel.. is the problem non-linear? who knows! but yeah probably. 
+- [PyMC](https://www.pymc-labs.io/blog-posts/spatial-gaussian-process-01/) - GP for geospatial data, tutorials. 
+
+-----
+
 
 
 # 11/10 understanding the data sturcture
