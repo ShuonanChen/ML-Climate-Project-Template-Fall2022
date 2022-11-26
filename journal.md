@@ -1,4 +1,13 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
+
+# 11/23 Fitting the models? 
+there are a few candidates packages
+- pystan
+- GPy
+- PcMC
+-- update: pystan keeps getting some weird errors. switching to Cmdstan. 
+
+
 # 11/21 castle fire paper notes
 **"primary estimates of sequoia mortality in the 2020 castle fire. "**
 ## main questions asked in the paper
