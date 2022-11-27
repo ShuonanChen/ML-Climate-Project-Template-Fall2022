@@ -1,5 +1,23 @@
 # Giant sequoia, wildfire and vegetation and other climate factors
 
+# 11/26 Stan + 2D GP
+- learning how to use Stan, pystan and cmdstan.
+- wrote 1D GP model following two examples 
+    - [betancourt](https://betanalpha.github.io/assets/case_studies/gaussian_processes.html#23_Fitting_A_General_Gaussian_Process_Posterior)
+    - [aki](https://avehtari.github.io/casestudies/Motorcycle/motorcycle_gpcourse.html#4_Heteroskedastic_GP_with_Hilbert_basis_functions)
+- need to expand to multi-dimensional case (found stan discussion [from this link](https://discourse.mc-stan.org/t/speeding-up-gaussian-process-model-for-spatial-prediction/16316/4)) -- leads to this following paper. 
+- found some example stan code from [paper on Hilbert space approx GP](https://arxiv.org/abs/2004.11408). 
+- Used some random iris dataset to test. 
+- the notebook uploaded (named `cmdstan_test.ipynb`) 
+- seems the model is doing correct thing at least. note now is only using exact GP model, no HS is used (and i have no idea how it workds!)
+
+## next steps
+1. preprocess our data to get the data points. only consider 2d case for now. 
+2. fit the current exact GP 2D model
+3. expand the data - can we use vector inputs in each location, how would the model change? write new stan code. 
+4. maybe explore the speed up (HSGP)
+
+
 # 11/23 Fitting the models? 
 there are a few candidates packages
 - pystan
