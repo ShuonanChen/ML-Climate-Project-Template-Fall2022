@@ -1,4 +1,22 @@
+
 # Giant sequoia, wildfire and vegetation and other climate factors
+
+
+# 11/28 preprocess the geospatial data 
+
+## the original questions:
+- use multiple fire severity images (diff fires in different years)
+- train a 2D GP model to predict the fire severity based on the environmental factors, including the sequoia density and humidity etc. 
+- is there associations with the sequoia density and the fire severity? (this is to test the assumption made in the paper)
+- so our $X$ would be $X \in \mathbb{R}^{D+2}$. For instance, $D=1$ and its the vector of density of sequoia, at these coordinates. 
+- then our prediction $y$ is a vector of fire severity -- the problem is how to get this data, if only considering castle fire then its a very small region (i think)
+- in the castle fire report, they used RAVG:
+> **Fire severity maps.** Spatially explicit Castle Fire severity was estimated using the satellite-derived **RAVG CBI4 composite burn index** (RAVG website), from Landsat prefire imagery acquired on August 9, 2020 and postfire imagery acquired on October 10, 2020. These data provide an initial, un-ground-truthed fire severity estimate; more refined estimates typically become available from other sources more than one year post-fire.
+- but honestly the exact source is unclear (RAVG or CBI? from RAVG could not find the castle fire data. Windy and KNP complex fire were found though)
+- $y$ hence in my case will be the burned area (available from RAVG). the coordinate will be the centroid of the 
+- however teh descriptors are hard to obtain - sequoia grove too sparse, and not enough info to infer the number of trees. 
+
+
 
 # 11/26 Stan + 2D GP
 - learning how to use Stan, pystan and cmdstan.
@@ -16,6 +34,8 @@
 2. fit the current exact GP 2D model
 3. expand the data - can we use vector inputs in each location, how would the model change? write new stan code. 
 4. maybe explore the speed up (HSGP)
+
+
 
 
 # 11/23 Fitting the models? 
