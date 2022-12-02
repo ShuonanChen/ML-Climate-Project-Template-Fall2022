@@ -1,5 +1,9 @@
 
 # Giant sequoia, wildfire and vegetation and other climate factors
+# 12/02
+1. for $Y$, log and normalization for the input data
+2. change the model so we can incorporate the feature vector. (linear combination? )
+
 
 
 # 11/28 preprocess the geospatial data 
