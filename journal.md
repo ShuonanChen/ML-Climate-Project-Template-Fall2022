@@ -1,8 +1,15 @@
 
 # Giant sequoia, wildfire and vegetation and other climate factors
-# 12/02
+# 12/03 update and changes. 
 1. for $Y$, log and normalization for the input data
-2. change the model so we can incorporate the feature vector. (linear combination? )
+2. change the model so we can incorporate the feature vector. Currently just doing 3 dimensional GP. 
+3. edit the preprocessing. Because of limitation with the datasets, making the following assumptions. 
+    - when $Y$ is available for the particular grid, it is considered to be observed and 
+
+
+
+## Next todo
+1. probably need to validate the model by holdingh 10% of the train data.     
 
 
 
