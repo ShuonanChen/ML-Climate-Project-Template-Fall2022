@@ -1,6 +1,6 @@
 // exact GP
 functions {
-	#GP 2D (analytical predicting)
+	#GP 2D (analytical predicting)  # only use one alpha and only for d1 (why,,,)
 	vector gp12_pred_rng(real[] x1_grid, real[] x2_grid,
 					 vector y1, real[] x1, real[] x2,
 					 real alpha, real rho1, real rho2, real sigma, real delta) {
@@ -8,23 +8,23 @@ functions {
 		int N2 = size(x1_grid);
 		vector[N2] f2;
 		{
-		  matrix[Nsample, Nsample] K =   cov_exp_quad(x1, alpha, rho1).*cov_exp_quad(x2, 1, rho2)
-							 + diag_matrix(rep_vector(square(sigma), Nsample));
+		  matrix[Nsample, Nsample] K =   cov_exp_quad(x1, alpha, rho1).*cov_exp_quad(x2, 1, rho2)  ## N x N
++ diag_matrix(rep_vector(square(sigma), Nsample));
 		  matrix[Nsample, Nsample] L_K = cholesky_decompose(K);
 
 		  vector[Nsample] L_K_div_y1 = mdivide_left_tri_low(L_K, y1);
 		  vector[Nsample] K_div_y1 = mdivide_right_tri_low(L_K_div_y1', L_K)';
-		  matrix[Nsample, N2] k_x1_x2 = cov_exp_quad(x1, x1_grid, alpha, rho1).*cov_exp_quad(x2, x2_grid, 1, rho2);
+		  matrix[Nsample, N2] k_x1_x2 = cov_exp_quad(x1, x1_grid, alpha, rho1).*cov_exp_quad(x2, x2_grid, 1, rho2);  ## N x N*
 		  vector[N2] f2_mu = (k_x1_x2' * K_div_y1); //'
 		  matrix[Nsample, N2] v_pred = mdivide_left_tri_low(L_K, k_x1_x2);
 		  matrix[N2, N2] cov_f2 =   cov_exp_quad(x1_grid, alpha, rho1).*cov_exp_quad(x2_grid, 1, rho2) - v_pred' * v_pred
-								  + diag_matrix(rep_vector(delta, N2)); //'
+								  + diag_matrix(rep_vector(delta, N2)); //'  N* x N*
 		  f2 = multi_normal_rng(f2_mu, cov_f2);
 		}
 		return f2;
 	}
 	
-	#Additive-2D GPs (analytical predicting)
+	#Additive-2D GPs (analytical predicting) # use two alpha (1,2) for d1 and d2
 	vector gp1gp2_pred_rng(real[] x1_grid, real[] x2_grid,
 					 vector y1, real[] x1, real[] x2,
 					 real alpha1, real alpha2, real rho1, real rho2, real sigma, real delta) {
@@ -109,10 +109,10 @@ transformed parameters{
 	matrix[Nsample,Nsample] L_K;
 
 	#Kernel 2D
-	L_K = ker_gp12(x[,1], x[,2], alpha[1], rho[1], rho[2], sigma);
+	#L_K = ker_gp12(x[,1], x[,2], alpha[1], rho[1], rho[2], sigma);
 	
 	#Additive-2D Kernels 
-	# L_K= kernel_gp1gp2(x[,1], x[,2], alpha[1], alpha[2], rho[1], rho[2], sigma);
+	L_K= ker_gp1gp2(x[,1], x[,2], alpha[1], alpha[2], rho[1], rho[2], sigma);
 }
 
 model{
