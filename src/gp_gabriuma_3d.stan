@@ -108,7 +108,7 @@ parameters {
 transformed parameters{
 	matrix[Nsample,Nsample] L_K;
 
-	#Kernel 2D
+	#Kernel 3D
 	L_K = ker_gp123(x[,1], x[,2], x[,3], alpha, rho[1], rho[2], rho[3], sigma);
 }
 

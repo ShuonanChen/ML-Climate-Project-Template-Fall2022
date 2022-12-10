@@ -1,5 +1,17 @@
 
 # Giant sequoia, wildfire and vegetation and other climate factors
+
+# 12/09 new update 
+- incorporating the suggestion from class presentation 
+    - use MLE for the hyperparameters
+    - include other explanatory variables. 
+
+- so lets update our model - instead of using 3d GP, we can do something like this maybe
+$y \sim \text{norm}(\mu,\sigma)$,   
+$\mu = f(x) + g(z)$,   
+$f(x) \sim GP(0, k)$,   
+$g(z) = z\cdot \beta$,   
+
 # 12/03 update and changes. 
 1. for $Y$, log and normalization for the input data
 2. change the model so we can incorporate the feature vector. Currently just doing 3 dimensional GP. 
