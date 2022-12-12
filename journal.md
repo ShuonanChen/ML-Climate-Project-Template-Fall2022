@@ -6,7 +6,7 @@
     - use MLE for the hyperparameters
     - include other explanatory variables. 
 
-- so lets update our model - instead of using 3d GP, we can do something like this maybe
+- so lets update our model - instead of using 3d GP, we can do something like this maybe    
 $y \sim \text{norm}(\mu,\sigma)$,   
 $\mu = f(x) + g(z)$,   
 $f(x) \sim GP(0, k)$,   
